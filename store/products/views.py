@@ -30,7 +30,25 @@ def products(request):
                 'name': 'Коричневый спортивный oversized-топ ASOS DESIGN',
                 'price': 3390,
                 'descriptions': 'Материал с плюшевой текстурой. Удобный и мягкий.',
-            }
+            },
+            {
+                'image': '/static/vendor/img/products/Black-Nike-Heritage-backpack.png',
+                'name': 'Черный рюкзак Nike Heritage',
+                'price': 2390,
+                'descriptions': 'Плотная ткань. Легкий материал.',
+            },
+            {
+                'image': '/static/vendor/img/products/Black-Dr-Martens-shoes.png',
+                'name': 'Черные туфли на платформе с 3 парами люверсов Dr Martens 1461 Bex',
+                'price': 13390,
+                'descriptions': 'Гладкий кожаный верх. Натуральный материал.',
+            },
+            {
+                'image': '/static/vendor/img/products/Dark-blue-wide-leg-ASOs-DESIGN-trousers.png',
+                'name': 'Темно-синие широкие строгие брюки ASOS DESIGN',
+                'price': 2890,
+                'descriptions': 'Легкая эластичная ткань сирсакер Фактурная ткань.',
+            },
         ]
     }
     return render(request, 'products/products.html', context)

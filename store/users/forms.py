@@ -44,7 +44,7 @@ class UserProfileForm(UserChangeForm):
     email = forms.CharField(widget=forms.EmailInput(attrs={
         'class': 'form-control py-4', 'readonly': True}))
     image = forms.ImageField(widget=forms.FileInput(attrs={
-        'class': 'custom-file-input'}))
+        'class': 'custom-file-input'}), required=False)
 
     class Meta:
         model = User
